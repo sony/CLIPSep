@@ -1,6 +1,0 @@
-name: separation
-channels:
-  - conda-forge
-dependencies:
-  - ruby=2.6.6
-  - compilers=1.4.2
