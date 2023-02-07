@@ -1,0 +1,29 @@
+name: clipsep
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.9
+  - pip=22.2.2
+  - numpy=1.23.1
+  - tbb=2020.2
+  - numba=0.53.1
+  - scipy=1.9.0
+  - matplotlib=3.5.2
+  - tqdm=4.64.0
+  - librosa=0.9.2
+  - pillow=9.2.0
+  - imageio=2.21.0
+  - opencv=4.6.0
+  - ftfy=6.1.1
+  - regex=2022.7.25
+  - cudatoolkit=10.2.89
+  - pytorch::pytorch=1.12.1
+  - pytorch::torchvision=0.13.1
+  - pylint
+  - black
+  - flake8
+  - pip:
+    - mir_eval==0.7
+    - museval==0.4.0
+    - git+https://github.com/openai/CLIP.git

@@ -148,7 +148,7 @@ def main():
     )
 
     # Make sure the output directory exists
-    args.out_dir.mkdir(exist_ok=True)
+    args.out_dir.mkdir(exist_ok=True, parents=True)
     (args.out_dir / "train").mkdir(exist_ok=True)
     (args.out_dir / "test").mkdir(exist_ok=True)
 

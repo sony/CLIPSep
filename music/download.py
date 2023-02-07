@@ -88,7 +88,7 @@ def main():
     )
 
     # Make sure the output directory exists
-    args.out_dir.mkdir(exist_ok=True)
+    args.out_dir.mkdir(exist_ok=True, parents=True)
 
     # Load the input JSON file
     data = utils.load_json(args.in_filename)
