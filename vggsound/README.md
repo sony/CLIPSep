@@ -22,5 +22,18 @@ pip install youtube_dl tqdm pafy
 Run the following script over all the CSV files.
 
 ```sh
-python download_ffmpeg.py -e -s -i data/vggsound/vggsound-shuf-00.csv -o data/vggsound/vggsound/00/
+python download_ffmpeg.py -e -s -i data/vggsound/vggsound-shuf-00.csv -o data/vggsound/video/00/
+```
+
+Extract audio from videos
+```sh
+python extract_audio.py -i data/vggsound/video -o data/vggsound/audio -s -e
+```
+Extract image frames from videos
+```sh
+python extract_frames.py -i data/vggsound/video -o data/vggsound/frames -s -e
+```
+Resize and crop images
+```sh
+python preprocess.py -i data/vggsound/frames -o data/vggsound/preprocessed -s -e
 ```
