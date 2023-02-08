@@ -1,7 +1,8 @@
 <center>
-Hao-Wen Dong, Naoya Takahashi, Julian McAuley, Yuki Mitsufuji, Julian McAuley, Taylor Berg-Kirkpatrick  
-Sony Group Corporation, University of California San Diego  
 
+[Hao-Wen Dong](https://salu133445.github.io/)†, [Naoya Takahashi](https://kotonaoya.wixsite.com/naoya-takahashi)\*,[Yuki Mitsufuji](https://www.yukimitsufuji.com/), [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/), [Taylor Berg-Kirkpatrick](https://cseweb.ucsd.edu/~tberg/)<BR>
+In International Conference on Learning Representations (ICLR) 2023<BR>
+ <span style="font-size: 80%;">(† Work done during an internship at Sony Group Corporation, \* corresponding author)</span><br>
 | [paper](https://arxiv.org/abs/2212.07065) | [code](https://github.com/sony/CLIPSep) |
 </center>
 
