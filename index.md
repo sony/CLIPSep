@@ -244,12 +244,12 @@ In International Conference on Learning Representations (ICLR) 2023<BR>
 | {% include audio_player.html filename="vggsound/3-23kti2LQUdw/mix.wav" style="max-width: 240px;" %} | {% include audio_player.html filename="vggsound/3-23kti2LQUdw/pred.wav" style="max-width: 240px;" %} | {% include audio_player.html filename="vggsound/3-23kti2LQUdw/pit0.wav" style="max-width: 240px;" %} | {% include audio_player.html filename="vggsound/3-23kti2LQUdw/pit1.wav" style="max-width: 240px;" %} |
 
 ---
-
+<!--
 ## Real-world movie example {#movie}
 
 > __Settings__: We take the audio track of a commercial movie clip as the input mixture. We aim to examine if the model can extract the desired sounds corresponding to a specific query. We use the CLIPSep model without the noise invariant training in this demo. Note that we use _text queries_{:.red} rather than image queries.
 
-<!--
+
 ### "Spiderman -- No Way Home (2021)" {#movie-1}
 
 - __Source__: [Spider-Man: No Way Home (2021) - Curing the Villains Scene (9/10) - Movieclips](https://www.youtube.com/watch?v=A4kZ2Nnsm_g)
@@ -271,8 +271,9 @@ In International Conference on Learning Representations (ICLR) 2023<BR>
 |:-:|
 | {% include video_player.html filename="spiderman-no-way-home/orchestra_people_yelling.mp4" width=720 %} |
 | (In the final example, we see how we can _combine __multiple queries__ to extract multiple target sounds_.) |
--->
+
 ---
+-->
 
 ## Robustness to different queries {#queries}
 
