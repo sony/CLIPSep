@@ -1,9 +1,12 @@
 <center>
-
-[Hao-Wen Dong](https://salu133445.github.io/)†, [Naoya Takahashi](https://kotonaoya.wixsite.com/naoya-takahashi)\*,[Yuki Mitsufuji](https://www.yukimitsufuji.com/), [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/), [Taylor Berg-Kirkpatrick](https://cseweb.ucsd.edu/~tberg/)<BR>
+<a href="https://salu133445.github.io/">Hao-Wen Dong</a>†,
+ <a href="https://kotonaoya.wixsite.com/naoya-takahashi/">Naoya Takahashi</a>*,
+ <a href="https://www.yukimitsufuji.com/">Yuki Mitsufuji</a>,
+ <a href="https://cseweb.ucsd.edu/~jmcauley/"> Julian McAuley</a>,
+ <a href="https://cseweb.ucsd.edu/~tberg/"> Taylor Berg-Kirkpatrick</a><BR>
 In International Conference on Learning Representations (ICLR) 2023<BR>
- <span style="font-size: 80%;">(† Work done during an internship at Sony Group Corporation, \* corresponding author)</span><br>
-| [paper](https://arxiv.org/abs/2212.07065) | [code](https://github.com/sony/CLIPSep) |
+ <span style="font-size: 80%;">(† Work done during an internship at Sony Group Corporation, * corresponding author)</span><br>
+<a href="https://arxiv.org/abs/2212.07065">paper</a> | <a href="https://github.com/sony/CLIPSep">code</a>|
 </center>
 
 ## Content
