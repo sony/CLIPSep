@@ -26,7 +26,8 @@ Please use the script in `CLIPSep/music` directory.
 Please use the script in `CLIPSep/vggsound` directory.
 ### Pretrained model
 
-The pretrained CLIPSep-NIT model can be found [here](https://drive.google.com/file/d/1fgwT_wFyNjXxmN45D7jU001Azub0PR54/view?usp=sharing).
+The pretrained CLIPSep-NIT model can be found [here](https://drive.google.com/file/d/1pYQ05BClqT6Z-OSkngDKsQ2PJRF70oQL/view?usp=share_link).
+
 
 
 ## Train

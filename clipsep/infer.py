@@ -226,6 +226,7 @@ def main(args):
             use_binary_mask=args.binary_mask,
         )
     elif args.image_model in ("clipsepnit", 'clippit4'):
+        print("build clipsepnit")
         model = clipsep.CLIPPITSepV4(
             args.n_mix,
             args.layers,
@@ -322,7 +323,7 @@ def main(args):
             use_binary_mask = args.binary_mask
         if args.image_model == "clip":
             pred_mask = model.module.infer(mag_mix, img_emb)[0]
-        elif "clipsepnit" in args.image_model:
+        elif args.image_model in ["clipsepnit", "clippit4"]:
             pred_mask, pit_masks = model.module.infer(mag_mix, img_emb)
             pred_mask = pred_mask[0]
             pit_mask1 = pit_masks[0]
