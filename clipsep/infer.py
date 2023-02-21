@@ -44,7 +44,7 @@ def parse_args(args=None, namespace=None):
         "-l", "--log_filename", type=pathlib.Path, help="log filename"
     )
     parser.add_argument(
-        "-a", "--audio_len", default=65535, type=int, help="audio length"
+        "-a", "--audio_len", default=None, type=int, help="audio length"
     )
     parser.add_argument(
         "--binary",
@@ -146,8 +146,6 @@ def new_clip_forward(self, image=None, text=None):
 
 
 def load_data(filename, args):
-    # Initialize an empty audio array
-    audio = np.zeros(args.audio_len, dtype=np.float32)
 
     # Load the audio
     print(filename)
@@ -155,9 +153,14 @@ def load_data(filename, args):
     audio_raw, rate = librosa.load(filename, sr=args.audio_rate, mono=True)
     # audio_raw = torch.tensor(audio_raw)
 
+    # Initialize an empty audio array
+    audio_len = 65535 * (audio_raw.shape[0]//65535 +1) if args.audio_len is None else args.audio_len
+    audio = np.zeros(args.audio_len, dtype=np.float32)
+
+
     # Repeat if audio is too short
-    audio_sec = 1.0 * args.audio_len / args.audio_rate
-    out_audio_len = min(audio_raw.shape[0], args.audio_len)
+    audio_sec = 1.0 * audio_len / args.audio_rate
+    out_audio_len = min(audio_raw.shape[0], audio_len)
     if audio_raw.shape[0] < rate * audio_sec:
         repeats = int(rate * audio_sec / audio_raw.shape[0]) + 1
         audio_raw = np.tile(audio_raw, repeats)
@@ -172,7 +175,7 @@ def load_data(filename, args):
     #         args.audio_len // 2 + (end - center)
     #     )
     # ] = audio_raw[start:end]
-    audio = audio_raw[:args.audio_len]
+    audio = audio_raw[:audio_len]
 
     # Clip the audio to [-1, 1]
     audio = np.clip(audio, -1, 1)
